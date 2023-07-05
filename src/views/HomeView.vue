@@ -1,4 +1,14 @@
 <template>
+  <svg class="absolute">
+    <filter id="noiseFilter">
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="6.29"
+        numOctaves="6"
+        stitchTiles="stitch"
+      />
+    </filter>
+  </svg>
   <div class="w-full min-h-screen flex justify-center items-center select-none">
     <div
       class="w-full md:w-[38rem] px-9 mb-24 flex flex-col gap-4 text-lg font-normal text-justify"
